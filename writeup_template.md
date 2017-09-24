@@ -113,6 +113,4 @@ The most important thing in this project was the parameter tuning. At first I fo
 
 Currently, I am removing the false positives by applying a threshold to the heat map, which is not perfect. I think I can improve by parameter tuning and learning more data.
 
-Another area I would like to improve is to mark the boundaries of the detected vehicle more closely to the vehicle. At present, the bounding box is a little unstable and is not always the perfect fit for the entire vehicle.
-
-The last thing we want to improve is the detection speed. It has already been speeded up by modifying the HOG feature to only calculate once for the whole area of interest, but it is still slow. It takes a long time to train, but it takes a long time to generate the resulting video as it takes a long time to evaluate.
+I would like to make use of Convolutional Neural Network for image classification as it is regarded as the best algorithm in image classification. Also, because it supports translational invariance, I think it would perform faster and we would not have to do sliding window search. 
